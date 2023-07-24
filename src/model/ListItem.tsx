@@ -1,9 +1,4 @@
-export interface Item {
-    id: string,
-    item: string,
-    checked: boolean
-}
-
+import { Item } from "../types"
 export default class ListItem implements Item {
     constructor (
         private _id: string = '',

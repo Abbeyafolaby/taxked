@@ -1,11 +1,5 @@
 import FullList from "../model/FullList";
-
-interface DOMList {
-    ul: HTMLUListElement,
-    clear(): void,
-    render(fullList: FullList): void
-}
-
+import { DOMList } from "../types";
 export default class ListTemplate implements DOMList {
 
     ul: HTMLUListElement
